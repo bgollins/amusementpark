@@ -7,16 +7,35 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Amusement Park Rides - What can you ride?!</h2>
-      <form id="heightmeter">
-        <div class="form-group">
-          <label for="height">How tall are you, in inches?</label>
-          <input id="height" type="number"></input>
-        </div>
-        <button type="submit" class="btn-info">Submit my height</button>
-      </form>
+      <div class="container">
+        <h1>Amusement Park Rides - What can you ride?!</h2>
+        <form id="heightmeter">
+          <div class="form-group">
+            <label for="height">How tall are you, in inches?</label>
+            <input id="height" type="number"></input>
+          </div>
 
+        <h2>How fast do you want to go?</h2>
+          <select id="speed">
+            <option value="1">Very slow</option>
+            <option value="2">Moderate</option>
+            <option value="3">Pretty fast</option>
+            <option value="4">RIDICULOUSLY FAST</option>
+          </select>
+
+        <h2>What type of ride to you want to try?</h2>
+          <select id="type">
+            <option value="1">Enjoyable</option>
+            <option value="2">Awesome</option>
+            <option value="3">Thrilling</option>
+            <option value="4">Dangerously fun</option>
+          </select>
+
+          <p><button type="submit" class="btn-info">Find my ride</button></p>
+        </form>
+      </div>
+
+    <div id="rides">
       <h2 class="tots">Tilt-a-whirl for tots</h2>
 
       <h2 class="big">Pirate Ship for punks</h2>

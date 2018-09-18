@@ -5,3 +5,7 @@
 .lowlight {
   background-color: blue;
 }
+
+.tots, .big, .broken {
+  display: none;
+}

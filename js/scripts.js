@@ -6,12 +6,17 @@ $(document).ready(function() {
   $("form#heightmeter").submit(function(event) {
 
     var heightInput = parseInt($("input#height").val());
+    var speedInput = parseInt($("#speed").val());
+    var typeInput = parseInt($("#type").val());
+    var total = speedInput + typeInput
 
     if (heightInput < 36) {
-      $(".tots").addClass("highlight");
+      $(".tots").show();
+    } else if (heightInput >= 36 && total >= 6) {
+      $(".big").show();
     } else {
-      $(".big").addClass("lowlight");
-    }
+      $(".broken").show();
+      }
     event.preventDefault();
   });
 });
